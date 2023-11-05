@@ -621,10 +621,15 @@ button[type=submit] {
   list-style: none;
   position: relative;
 }
-.side-navigation .menu ul li:last-child a:first-child {
-  font-family: "Poppins",sans-serif;
+.side-navigation .menu ul li:last-child a {
+  width:40px;
 }
-
+.side-navigation .menu ul li:last-child a img{
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  border:1px white solid;
+}
 .side-navigation .menu ul li ul {
   width: 100%;
   display: none;
@@ -795,7 +800,7 @@ button[type=submit] {
   margin-right: 40px;
   margin-left: 60px;
   padding: 25px 0;
-  padding-right: 30px;
+  padding-right: 15px;
 }
 .navbar .container .language select{
   background-color: transparent;
@@ -813,6 +818,13 @@ button[type=submit] {
   margin: 0 5px;
   color: #fff;
   font-weight: 600;
+  width:25px;
+}
+.navbar .container .language a img{
+  width:25px;
+  height:25px;
+  border-radius: 50%;
+  border:1px white solid;
 }
 .navbar .container .language a:hover {
   color: #1a8a94;
@@ -996,7 +1008,7 @@ button[type=submit] {
 .slider .slider-container .swiper-slide .container h1 {
   font-size: 5vw;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   color: #1a8a94;
   margin-bottom: 20px;
 }
@@ -1322,7 +1334,7 @@ button[type=submit] {
 .intro .content-box h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .intro.arabic .content-box h4{
@@ -1481,7 +1493,7 @@ button[type=submit] {
 .benefits h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .benefits.arabic h4 {
@@ -1585,7 +1597,14 @@ button[type=submit] {
   margin-bottom:20px;
   width:80px;
 }
-.service h4{
+.benefits .service h4{
+  color:white;
+  font-size: 2.5rem;
+  transition: 0.5s color ease-in-out;
+  font-family: "Poppins",sans-serif;
+  text-align: center;
+}
+.benefits.arabic .service h4{
   color:white;
   font-size: 2.5rem;
   transition: 0.5s color ease-in-out;
@@ -1625,7 +1644,7 @@ button[type=submit] {
 .recent-gallery h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .recent-gallery.arabic h4{
@@ -1760,7 +1779,7 @@ button[type=submit] {
 .property-calculator .content-box h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .property-calculator.arabic .content-box h4{
@@ -1833,7 +1852,7 @@ button[type=submit] {
 .property-plans h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .property-plans.arabic h4{
@@ -1935,7 +1954,7 @@ button[type=submit] {
 .get-consultation h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 15px;
 }
 @media(max-width:300px){
@@ -2022,7 +2041,7 @@ button[type=submit] {
 .recent-posts h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .recent-posts.arabic h4{
@@ -2101,7 +2120,7 @@ button[type=submit] {
 .property-customization h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .property-customization.arabic h4{
@@ -2146,7 +2165,7 @@ button[type=submit] {
 }
 .apartment h2 {
   font-size: 4vw;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 20px;
 }
 .apartment.arabic h2{
@@ -2251,7 +2270,7 @@ button[type=submit] {
 }
 .about-content h2 {
   font-size: 4vw;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 20px;
 }
 .about-content.arabic h2{
@@ -2269,6 +2288,7 @@ button[type=submit] {
   margin-bottom: 40px;
   font-weight: 600;
   opacity: 0.5;
+  color:#1a8a94;
 }
 .about-content h4 {
   margin-bottom: 20px;
@@ -2335,7 +2355,7 @@ button[type=submit] {
 .certificates h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .certificates.arabic h4{
@@ -2386,7 +2406,7 @@ button[type=submit] {
 .facilities h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .facilities h4 span {
@@ -2460,7 +2480,7 @@ button[type=submit] {
 }
 .faq .sidebox h3 {
   display: block;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 20px;
 }
 .faq .sidebox p {
@@ -2500,7 +2520,7 @@ button[type=submit] {
 }
 
 .sales-offices .office-box h5 {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 20px;
   font-size: 26px;
 }
@@ -2549,7 +2569,7 @@ button[type=submit] {
 .intro-video h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .intro-video h4 span {
@@ -2599,7 +2619,7 @@ button[type=submit] {
 .press-relases figure figcaption h5 {
   display: block;
   font-size: 22px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .press-relases figure figcaption p {
@@ -2688,7 +2708,7 @@ button[type=submit] {
 .sales-team figure figcaption h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .sales-team figure figcaption h4 span {
@@ -2932,7 +2952,7 @@ button[type=submit] {
 .blog .sidebar .widget .title {
   width: 100%;
   display: block;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 20px;
 }
 .blog .sidebar .widget .categories {
@@ -3054,7 +3074,7 @@ button[type=submit] {
 .contact h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   margin-bottom: 15px;
 }
 .contact h4 span {
@@ -3242,7 +3262,7 @@ button[type=submit] {
   height: 70px;
 }
 .footer-bar .inner h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Poppins", serif;
   font-size: 22px;
   margin-bottom: 15px;
 }
@@ -3366,10 +3386,12 @@ button[type=submit] {
 .footer .contact-box.arabic{
   float: left;
 }
-
-.footer .contact-box h5 {
+.footer .contact-box h5{
   margin-bottom: 10px;
   font-size: 19px;
+  font-family: "Poppins", sans-serif; 
+}
+.footer.arabic .contact-box h5 {
   font-family: "GE SS Two", serif;
 }
 .footer .contact-box h3 {
