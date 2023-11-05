@@ -1567,7 +1567,7 @@ button[type=submit] {
   width:100%;
 
 }
-@media(max-width:768px){
+@media(max-width:1024px){
   .services{
       grid-template-columns: repeat(2,50%);
   }
@@ -1913,7 +1913,7 @@ button[type=submit] {
   padding-top: 150px;
   margin-bottom: 100px;
   background-size: auto 120%;
-  background-position: right;
+  background-position: center !important;
   background-repeat: no-repeat;
   background-color: #e5e4df;
 }
@@ -3754,7 +3754,9 @@ button[type=submit] {
     float: left;
     text-align: left;
   }
-
+  .footer .contact-box.arabic{
+    float:right
+  }
   .footer .contact-box ul {
     float: left;
   }
