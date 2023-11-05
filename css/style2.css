@@ -144,8 +144,15 @@ a {
   text-decoration: none;
   vertical-align: baseline;
 }
-a:hover{ 
+.owl-item:hover a{ 
   color:#1a8a94 !important;
+}
+.owl-item article{
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.owl-item:hover article{
+  transform: scale(1.1);
 }
 ul, ol {
   list-style: none;
