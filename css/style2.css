@@ -468,3 +468,8 @@ body:not(.apo-form-controls-default-bs) textarea {
   
 }
 
+@media(max-width:300px){
+  .apo-striped-photo-title{
+    font-size:35px;
+  }
+}

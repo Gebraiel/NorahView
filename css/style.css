@@ -2014,7 +2014,8 @@ button[type=submit] {
 }
 @media(max-width:300px){
   .get-consultation a{
-    padding:0 25px;
+    padding:0 15px;
+    font-size: 9px;
   }
 }
 .get-consultation a i {
