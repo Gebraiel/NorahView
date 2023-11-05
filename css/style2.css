@@ -1,0 +1,459 @@
+/* ------------------------------------------------------
+  Stylesheet Guide
+---------------------------------------------------------
+    1. Global
+        1.1. Preloader
+        1.2. Reusable Patterns
+            1.2.0. Grid
+            1.2.1. Aligner
+            1.2.2. Isotope
+            1.2.3. Table Row
+            1.2.4. Named Element
+        1.3. Page Skin
+    2. Layout
+      2.1. Fixed Content
+      2.2. Full Height Article
+      2.3. Parallax Grid
+    3. Reusable Patterns
+    3. General Classes
+        3.1. WordPress Core
+        3.2. Basic Concepts
+    4. Typography
+        4.1. Dropcap
+        4.2. Blockquote
+        4.3. Tooltips
+    5. Header
+      5.1. Layout
+      5.2. Skins
+      5.3. Navigation
+        5.3.1. Sub-menu
+          5.3.1.1. Sub-menu (level 3)
+        5.3.2. Full Screen Navigation
+      5.4. Vertical
+        5.4.1. Side Header
+      5.5. Hidden Side Column
+    6. Page Header
+      6.1. Breadcrumbs
+    7. Content Elements
+      7.1. Forms
+      7.2. Select
+      7.3. Oneline Form
+      7.4. Rounded Form
+      7.5. Moved Label
+      7.6. Contact Form
+      7.7. Lists
+      7.8. Alert Boxes
+      7.9. Accordion & Toggle
+      7.10. Tabs
+        7.10.1. Vertical Tabs
+      7.11. Buttons
+      7.12. Dividers
+      7.13. Progress Bars
+      7.14. Testimonials
+        7.14.1. Style 2
+        7.14.2. Style 3
+      7.15. Team Members
+      7.16. Social Networks
+      7.17. Counters
+      7.18. Pagination
+      7.19. Filter
+      7.20. Gallery
+        7.20.1. LightBox
+      7.21. Tables
+      7.22. Full Page 
+      7.23. Experience List 
+      7.24. Services 
+      7.25. Call to Action 
+      7.26. Back to Top Button
+      7.27. Owl Carousel & Revolution Slider
+      7.28. Striped Photos
+      7.29. Slider
+        7.29.1. Layers
+        7.29.2. Navigation
+      7.30. Icon Boxes
+      7.31. Pricing Tables
+      7.32. Bottom Controls
+      7.33. Extended Info List
+    8. Sidebar & Widgets
+      8.1. Contact Info Widget
+      8.2. Tags Widget
+      8.3. Entries Widgets
+      8.4. Comment Widgets
+      8.5. Gallery Widget
+      8.6. Calendar Widget
+    9. Blog
+      9.1. Container
+      9.2. Items
+        9.2.1. Style 1
+        9.2.2. Style 2
+        9.2.3. Style 3
+        9.2.4. Style 4
+        9.2.5. Style 5
+      9.3. Single
+    10. Portfolio
+      10.1. Container
+      10.2. Items
+        10.2.1. Style 1
+        10.2.2. Style 2
+        10.2.3. Style 3
+        10.2.4. Style 4
+        10.2.5. Style 5
+        10.2.6. Style 6
+      10.3. Single
+    11. Dedicated Pages
+      11.1. About Me
+      11.2. Contact Us
+      11.3. Home
+    12. Modal Windows
+        12.1. Photo Info
+    13. Footer
+    14. Media Queries
+      14.1. Override Bootstrap media queries
+      14.2. Tablet (landscape) & Notebook 13'
+      14.3. Tablet (portait)
+      14.4. Phone (landscape)
+      14.5. Phone (portait)
+    15. Retina Ready
+---------------------------------------------------------- */
+
+/* ------------------------------------------------------
+  0. Reset
+------------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video, main {
+  display: block;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt, u, ul, var {
+  background: transparent;
+  border: 0 none;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  vertical-align: baseline;
+}
+a:hover{ 
+  color:#1a8a94 !important;
+}
+ul, ol {
+  list-style: none;
+}
+
+input, textarea {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+input, button {
+  -webkit-appearance: none;
+  outline: none;
+  background: transparent;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+
+.apo-page-dark-skin a, .apo-striped-photo a, .apo-team-member-name a, .apo-footer .apo-contact-info-widget a, .apo-entries-container.apo-style-1 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-4 .apo-entry:hover a:not(.apo-btn), .apo-portfolio-container.apo-style-2 .apo-project a, .apo-portfolio-container.apo-style-3 .apo-project a, .apo-portfolio-container.apo-style-4 .apo-project a, .apo-portfolio-container.apo-style-5 .apo-project-categories a, .apo-portfolio-container.apo-style-6 .apo-project-title a, .apo-portfolio-container.apo-style-6 .apo-project-categories a, .apo-footer.apo-style-2 a, a, .apo-pagination > li > a, .apo-pagination .current, .apo-filter a, .apo-filter a.apo-active, .apo-full-page-controls .apo-language, .apo-widget-area a, .apo-entry-tags a, .apo-entries-container.apo-style-2 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-3 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-4 .apo-entry a:not(.apo-btn), .apo-entry.apo-single .apo-entry-meta a, .comments-list .reply, .apo-contact-section-body .apo-contact-info a, .apo-contact-section-footer a, .apo-portfolio-container.apo-style-1 .apo-project-categories a {
+  border: none;
+  line-height: inherit;
+  display: inline;
+  /*background-position: 0 1em;*/
+  text-decoration: none !important;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: all 0.4s ease-out;
+}
+
+.apo-page-dark-skin a, .apo-striped-photo a, .apo-team-member-name a, .apo-footer .apo-contact-info-widget a, .apo-entries-container.apo-style-1 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-4 .apo-entry:hover a:not(.apo-btn), .apo-portfolio-container.apo-style-2 .apo-project a, .apo-portfolio-container.apo-style-3 .apo-project a, .apo-portfolio-container.apo-style-4 .apo-project a, .apo-portfolio-container.apo-style-5 .apo-project-categories a, .apo-portfolio-container.apo-style-6 .apo-project-title a, .apo-portfolio-container.apo-style-6 .apo-project-categories a, .apo-footer.apo-style-2 a {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+}
+
+a, .apo-pagination > li > a, .apo-pagination .current, .apo-filter a, .apo-filter a.apo-active, .apo-full-page-controls .apo-language, .apo-widget-area a, .apo-entry-tags a, .apo-entries-container.apo-style-2 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-3 .apo-entry a:not(.apo-btn), .apo-entries-container.apo-style-4 .apo-entry a:not(.apo-btn), .apo-entry.apo-single .apo-entry-meta a, .comments-list .reply, .apo-contact-section-body .apo-contact-info a, .apo-contact-section-footer a {
+  background-image: linear-gradient(to bottom, #000000 0%, #000000 100%);
+}
+
+/* ------------------------------------------------------
+  1. Global
+------------------------------------------------------ */
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  background-color: #f5f5f5;
+  overflow-x: hidden !important;
+}
+
+.apo-aligner-outer {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.apo-aligner-inner {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  vertical-align: top;
+}
+
+[data-bg-img-src] {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.apo-page,
+.apo-header,
+.apo-footer {
+  transition: all 0.4s ease-out;
+}
+
+
+body.apo-body-scroll-locked {
+  overflow: hidden !important;
+}
+
+
+/* ------------------------------------------------------
+    4. Typography
+------------------------------------------------------ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+
+h1:not(:last-child),
+h2:not(:last-child),
+h3:not(:last-child) {
+  margin-bottom: 46px;
+}
+
+
+
+small {
+  font-size: 12px;
+  line-height: 18px;
+  display: inline-block;
+}
+
+
+/* ------------------------------------------------------
+        5.5. Hidden Side Column
+    ------------------------------------------------------ */
+.apo-hidden-column-initialized .apo-page,
+.apo-hidden-column-initialized .apo-footer,
+.apo-hidden-column-initialized .apo-fixed-content-fixed-col,
+.apo-hidden-column-initialized .apo-full-page-fixed-col {
+  transition: all 0.4s ease-out;
+}
+
+.apo-hidden-column-initialized .apo-page,
+.apo-hidden-column-initialized .apo-footer {
+  position: relative;
+}
+
+.apo-hidden-column-initialized.apo-hidden-column-left .apo-page,
+.apo-hidden-column-initialized.apo-hidden-column-left .apo-footer {
+  left: 0;
+}
+
+body:not(.apo-form-controls-default-bs) input,
+body:not(.apo-form-controls-default-bs) button,
+body:not(.apo-form-controls-default-bs) textarea {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/* ------------------------------------------------------
+        7.27. Owl Carousel & Revolution Slider
+    ------------------------------------------------------ */
+.owl-nav {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+  transition: color 0.4s ease-out;
+}
+
+.owl-prev,
+.owl-next {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: inherit;
+  padding: 5px 10px;
+}
+
+.owl-prev [class^="icon"],
+.owl-next [class^="icon"] {
+  display: block;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.owl-prev:hover .owl-nav-text,
+.owl-next:hover .owl-nav-text{
+  opacity: 1;
+}
+
+.owl-nav-text {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.owl-prev {
+  text-align: right;
+}
+
+.owl-next {
+  text-align: left;
+}
+
+/* ------------------------------------------------------
+        7.28. Striped Photos
+    ------------------------------------------------------ */
+.apo-striped-photos.owl-carousel .apo-striped-photo .apo-aligner-inner {
+  transition: all .4s ease-out .3s;
+}
+
+.apo-striped-photos.owl-carousel .owl-item.owl-item-focused .apo-striped-photo .apo-aligner-inner,
+.apo-striped-photos.owl-carousel .owl-item.owl-item-unfocused .apo-striped-photo .apo-aligner-inner {
+  transition-duration: 0s;
+  transition-delay: 0s;
+}
+
+/* .apo-striped-photos.owl-carousel .owl-item.owl-item-unfocused .apo-striped-photo .apo-aligner-inner {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.5s ease-in-out ;
+} */
+
+
+.apo-striped-photo {
+  font-weight: 400;
+  color: #fff;
+  overflow: hidden;
+  padding: 60px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.apo-striped-photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.apo-striped-photo a {
+  color: white;
+}
+
+
+.apo-striped-photo .apo-aligner-inner {
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+}
+
+.apo-striped-photo-description {
+  height: 100%;
+}
+
+.apo-striped-photo-title {
+  font-size: 60px;
+  line-height: 65px;
+}
+.apo-striped-photo-title.arabic{
+  text-align:center!important;
+}
+.apo-striped-photo-title:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.apo-striped-photo-title a {
+  background-position: 0 75px;
+}
+
+.apo-striped-photo-categories {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.apo-striped-photo-categories > li {
+  display: inline;
+}
+
+
+.apo-striped-photo-categories a {
+  background-position: 0 22px;
+}
+
+.apo-striped-photo-categories:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+@media all and (max-width: 767px) {
+  h1:not(:last-child),
+  h2:not(:last-child),
+  h3:not(:last-child),
+  h4:not(:last-child),
+  h5:not(:last-child),
+  h6:not(:last-child) {
+    margin-bottom: 35px;
+  }
+  .apo-striped-photo-title {
+    font-size: 46px;
+    line-height: 50px;
+  }
+  .apo-striped-photos.owl-carousel .owl-item.owl-item-unfocused .apo-striped-photo .apo-aligner-inner {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+}
+
