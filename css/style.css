@@ -1603,6 +1603,7 @@ button[type=submit] {
   transition: 0.5s color ease-in-out;
   font-family: "Poppins",sans-serif;
   text-align: center;
+  letter-spacing: -1px;
 }
 .benefits.arabic .service h4{
   color:white;
@@ -1613,7 +1614,7 @@ button[type=submit] {
 }
 
 .service:hover h4{
-  color:#1a8a94;
+  color:#1a8a94 !important;
 }
 .overlay{
   position: absolute;
@@ -2287,7 +2288,6 @@ button[type=submit] {
 .about-content h5 {
   margin-bottom: 40px;
   font-weight: 600;
-  opacity: 0.5;
   color:#1a8a94;
 }
 .about-content h4 {
@@ -2297,6 +2297,7 @@ button[type=submit] {
 .about-content p {
   line-height: 1.7;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .about-content p strong {
   font-weight: 600;
