@@ -621,6 +621,10 @@ button[type=submit] {
   list-style: none;
   position: relative;
 }
+.side-navigation .menu ul li:last-child a:first-child {
+  font-family: "Poppins",sans-serif;
+}
+
 .side-navigation .menu ul li ul {
   width: 100%;
   display: none;
@@ -797,8 +801,12 @@ button[type=submit] {
   background-color: transparent;
   color:white;
 }
+
 .navbar .container .language select option{
   background-color: #1a8a94;
+}
+.language select option:first-child{
+  font-family: "Poppins",sans-serif;
 }
 .navbar .container .language a {
   display: inline-block;
@@ -3377,6 +3385,7 @@ button[type=submit] {
 .footer .contact-box p a {
   color: #fff;
   opacity: 0.5;
+  font-family: "Poppins",sans-serif;
 }
 .footer .contact-box ul {
   float: left;
@@ -3460,6 +3469,7 @@ button[type=submit] {
   .navbar .container .language{
     margin-left:auto;
   }
+
   .navbar.arabic .container .language{
     margin-left:0;
     margin-right:auto;
