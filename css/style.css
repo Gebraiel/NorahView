@@ -993,11 +993,9 @@ button[type=submit] {
   position: absolute;
   left: 0;
   top: 0;
-  background: rgb(26,138,148);
-  background: linear-gradient(180deg, rgba(26,138,148,1) 0%, rgba(0,0,0,0) 50%);
-  background: -moz-linear-gradient(180deg, rgba(26,138,148,1) 0%, rgba(0,0,0,0) 50%);
-  background: -webkit-linear-gradient(180deg, rgba(26,138,148,1) 0%, rgba(0,0,0,0) 50%);
-  background: linear-gradient(180deg, rgba(26,138,148,1) 0%, rgba(0,0,0,0) 50%);
+  background: black;
+  opacity: 0.6;
+
   /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#26282b",endColorstr="#1a8a94",GradientType=1); */
 }
 .slider .slider-container .swiper-slide .container {
@@ -1031,7 +1029,7 @@ button[type=submit] {
   z-index: -1;
 }
 .slider .slider-container .swiper-slide .container h2 {
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   margin-bottom: 50px;
 }
@@ -1976,13 +1974,8 @@ button[type=submit] {
 }
 .get-consultation p {
   display: block;
-  padding-right: 20%;
+
   margin-bottom: 40px;
-}
-@media(max-width:460px){
-  .get-consultation p{
-    padding-right:0;
-  }
 }
 .get-consultation .content-box.arabic p{
   padding-right: 0;
@@ -2506,6 +2499,8 @@ button[type=submit] {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
   padding: 30px;
   margin: 15px 0;
   border: 1px solid #eee;
