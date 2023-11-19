@@ -4,143 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        @font-face {
-        font-family: "GE SS Two";
-        src: url("../fonts/GE\ SS\ Two\ Light.otf");
-        font-weight: 200;
-        }
-        @font-face {
-        font-family: "GE SS Two";
-        src: url("../fonts/GE\ SS\ Two\ Medium.otf");
-        font-weight: 600;
-        }
-        @font-face {
-        font-family: "GE SS Two";
-        src: url("../fonts/GE\ SS\ Two\ Bold.otf");
-        font-weight: 800;
-        }
-        *{
-            margin:0;
-            padding:0;
-        }
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .services{
-            display: grid;
-            grid-template-columns: repeat(4,25%);
-            grid-gap:0px;
-            width:100%;
-
-        }
-        @media(max-width:768px){
-            .services{
-                grid-template-columns: repeat(2,50%);
-            }
-        }
-        @media(max-width:480px){
-            .services{
-                grid-template-columns: repeat(1,auto);
-            }
-        }
-        .service{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding:20px;
-            height:500px;
-            align-items: center;
-            position: relative;
-            background-position: center;
-            background-size:cover;
-            background-repeat: no-repeat;
-        }
-        
-        .service h4,.service img{
-            z-index: 1;
-        }
-        .service .icon{
-            margin-bottom:20px;
-        }
-        .service h4{
-            color:white;
-            font-size: 2.5rem;
-            transition: 0.5s color ease-in-out;
-            font-family: "GE SS TWO",sans-serif;
-            text-align: center;
-        }
-        /* @media(max-width:991px){
-            .service h4{
-                font-size: 2rem;
-            }
-        }
-        @media(max-width:625px){
-            .service h4{
-                font-size:1.5rem;
-            }
-        }
-        @media(max-width:425px){
-            .service h4{
-                font-size:1rem;
-            }
-        } */
-        .service:hover h4{
-            color:#1a8a94;
-        }
-        .overlay{
-            position: absolute;
-            left:0;
-            top:0;
-            width:100%;
-            height:100%;
-            background: linear-gradient(180deg,black,white);
-            opacity: 0.5;
-            transition: 0.5s opacity ease-in-out;
-        }
-        .service:hover .overlay{
-            opacity: 0.2 ;
-        }
-        
-    </style>
 </head>
 <body>
-    <div class="services ">
-        <div class="service"  style="background-image:url('images/1.jpg')">
-            <div class="overlay"></div>
-            <img class="icon" src="ico/bullseye-with-arrow.png">
-            <h4>
-                التسويق العقاري
-            </h4>
-        </div>
-        <div class="service" style="background-image:url('images/2.jpg')">
-            <div class="overlay"></div>
-            <img class="icon" src="ico/bullseye-with-arrow.png">
-            <h4>
-                التطوير العقاري
-            </h4>
-        </div>
-        <div class="service" style="background-image:url('images/3.jpg')">
-            <div class="overlay"></div>
-            <img class="icon" src="ico/bullseye-with-arrow.png">
-            <h4>
-                الشراء والبيع العقاري
-            </h4>
-           
-        </div>
-        <div class="service" style="background-image:url('images/4.jpg')">
-            <div class="overlay"></div>
-            <img class="icon" src="ico/bullseye-with-arrow.png">
-            <h4>
-                الإنشاءات العامة            
-            </h4>
-        </div>
-    </div>
     <script>
-    
+        const myObj = {
+            username: "Elzero",
+            id: 100,
+            score: 1000,
+            country: "Egypt",
+        };
+
+        // Write Your Code Here
+        Object.defineProperty(myObj,"score",{
+            writable : false
+        })
+        
+        Object.defineProperty(myObj,"id",{
+            enumerable :false
+        })
+
+        delete myObj.country;
+        myObj.score = 500;
+
+        for (let prop in myObj) {
+        console.log(`${prop} => ${myObj[prop]}`);
+        }
+
+        console.log(myObj);
+
+        // Needed Output
+
     </script>
 </body>
 </html>
